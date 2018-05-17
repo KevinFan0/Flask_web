@@ -1,6 +1,7 @@
-from flask import Flask,request
+from flask import Flask,request,render_template
 from flask import current_app
 from flask import make_response
+
 
 app=Flask(__name__)
 app_ctx=app.app_context() #程序上下文
