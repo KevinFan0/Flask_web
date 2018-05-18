@@ -15,9 +15,10 @@ app_ctx.push()
 
 @app.route('/')
 def index():
-    respons=make_response('<h1>This document carries a cookie!</h1>')
-    respons.set_cookie('answer','42')
-    return respons
+    # respons=make_response('<h1>This document carries a cookie!</h1>')
+    # respons.set_cookie('answer','42')
+    # return respons
+    return str(1)
 
 @app.route('/user/<name>')
 def user(name):
